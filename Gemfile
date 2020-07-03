@@ -16,6 +16,9 @@ gem "minima", "~> 2.5"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
  gem "github-pages", "~> 206", group: :jekyll_plugins
 
+# Support remote themes hosted from Github
+gem "jekyll-remote-theme"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
