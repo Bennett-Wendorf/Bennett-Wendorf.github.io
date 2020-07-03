@@ -1,0 +1,46 @@
+:root{
+    --main-bg-color: rgb(80,80,80);
+    --header-text-color: white;
+    --button-hover-color: grey;
+    --button-active-color: rgb(48, 48, 48);
+}
+
+body{
+    background-color:white;
+    margin: 0;
+}
+
+.dark-grey{
+    background-color: var(--main-bg-color);
+    color: var(--header-text-color);
+}
+
+.top-bar{
+    width: 100%;
+}
+
+nav.top-bar a{
+    color: var(--header-text-color);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+nav.top-bar a:hover{
+    background-color: var(--button-hover-color);
+}
+
+nav.top-bar a:active{
+    background-color: var(--button-active-color);
+}
+
+nav.top-bar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0 0 0 10px;
+    overflow: hidden;
+}
+
+nav.top-bar li{
+    float: left;
+}
