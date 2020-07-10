@@ -42,6 +42,8 @@ color:
 social:
   - title: github
     url: http://github.com/Bennett-Wendorf
+  - title: stack-overflow
+    url: https://stackoverflow.com/users/13887741/bennett-wendorf
 
 # Footer settings
 footer:
