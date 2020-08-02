@@ -13,7 +13,23 @@ body{
     position: fixed;
     z-index: 1030;
     top: 0;
-    height: 100px;
+    height: {{ site.navbar.height }}px;
+}
+
+@media (max-width: 849px) {
+    .top-bar {
+        height: {{ site.navbar.height-small }}px;
+    }
+}
+
+.top-margin {
+    margin-top: {{ site.navbar.height }}px;
+}
+
+@media (max-width: 849px) {
+    .top-margin {
+        margin-top: {{ site.navbar.height-small }}px;
+    }
 }
 
 .top-bar ul{
@@ -36,6 +52,12 @@ body{
     font-size: 32px;
 }
 
+@media (max-width: 849px) {
+    .site-link{
+        font-size: 18px;
+    }
+}
+
 .main-footer{
     width: 100%;
     font-size: 20px;
@@ -49,6 +71,7 @@ body{
     border-radius: 5%;
     width: 200px;
     float: right;
+    display: none;
 }
 
 .dropdown ul {

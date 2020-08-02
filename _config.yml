@@ -49,6 +49,11 @@ social:
 footer:
   social: Around the Web
 
+# Navbar settings
+navbar:
+  height: 100 
+  height-small: 75
+
 # Build settings
 # remote_theme: jeromelachaud/freelancer-theme
 plugins:
