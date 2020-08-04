@@ -167,3 +167,25 @@ body{
     background: #{{ site.color.btn-hover }};
     text-decoration: none;
 }
+
+.content-area-accent {
+    color: black;
+    word-wrap: normal;
+    background: #{{ site.color.accent }};
+}
+
+.content-area-light {
+    color: black;
+    word-wrap: normal;
+    background: {{ site.color.primary-text }};
+}
+
+.content-main {
+    padding: {{ site.navbar.height }}px 0;
+}
+
+@media (max-width: 849px) {
+    .content-main {
+        padding: {{ site.navbar.height-small }}px 0;
+    }
+}
