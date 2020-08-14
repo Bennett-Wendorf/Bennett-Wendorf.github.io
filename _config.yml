@@ -58,7 +58,6 @@ navbar:
 # remote_theme: jeromelachaud/freelancer-theme
 plugins:
   - jekyll-feed
-#  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
