@@ -180,6 +180,16 @@ body{
     background: {{ site.color.primary-text }};
 }
 
+.content-area-image {
+    background-image: url("/res/blur_code.png");
+    background-color: #{{ site.color.accent }};
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    word-wrap: normal;
+    color: #{{ site.color.primary-text }};
+}
+
 .content-main {
     padding: {{ site.navbar.height }}px 0;
 }
