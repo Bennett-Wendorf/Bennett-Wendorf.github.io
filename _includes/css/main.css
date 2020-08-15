@@ -172,12 +172,14 @@ body{
     color: black;
     word-wrap: normal;
     background: #{{ site.color.accent }};
+    height: 500px;
 }
 
 .content-area-light {
     color: black;
     word-wrap: normal;
     background: {{ site.color.primary-text }};
+    height: 500px;
 }
 
 .content-area-image {
@@ -187,7 +189,13 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     word-wrap: normal;
+    height: 850px;
     color: #{{ site.color.primary-text }};
+}
+
+.content-intro {
+    font-weight: bold;
+    align: center;
 }
 
 .content-main {
