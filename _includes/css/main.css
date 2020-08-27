@@ -189,7 +189,7 @@ body{
 .content-area-image {
     background-image: url("/res/blur_code.png");
     background-color: #{{ site.color.accent }};
-    background-position: center;
+    background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     word-wrap: normal;
@@ -199,7 +199,7 @@ body{
 
 .content-intro {
     font-weight: bold;
-    align: center;
+    box-align: center;
 }
 
 .content-main {
