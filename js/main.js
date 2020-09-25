@@ -6,3 +6,8 @@ function toggleDropdownMenu() {
         menu.style.display = "block";
     }
 }
+
+function toggleProject(content) {
+    document.getElementById(content).style.visibility="visible";
+    alert(content);
+}

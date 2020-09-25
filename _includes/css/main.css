@@ -176,14 +176,12 @@ body{
     color: black;
     word-wrap: normal;
     background: #{{ site.color.accent }};
-    height: 500px;
 }
 
 .content-area-light {
     color: black;
     word-wrap: normal;
     background: {{ site.color.primary-text }};
-    height: 500px;
 }
 
 .content-area-image {
@@ -202,6 +200,12 @@ body{
     box-align: center;
 }
 
+.content-header {
+    font-size: 40px;
+    font-weight: bold;
+    box-align: center;
+}
+
 .content-main {
     padding: {{ site.navbar.height }}px 0;
 }
@@ -210,4 +214,19 @@ body{
     .content-main {
         padding: {{ site.navbar.height-small }}px 0;
     }
+}
+
+.portfolio-cell {
+    background-color: lightgrey;
+    margin: 5px;
+    height: 250px;
+    text-decoration: none;
+}
+
+.portfolio-cell:hover,
+.portfolio-cell:focus,
+.portfolio-cell:active,
+.portfolio-cell.active{
+    text-decoration: none;
+    color: #{{ site.color.primary-text }};
 }
