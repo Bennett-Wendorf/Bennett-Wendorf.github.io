@@ -68,7 +68,7 @@ body{
     background: #{{ site.color.primary }};
     padding: 0 0;
     margin: 1px;
-    border-radius: 5%;
+    /* border-radius: 5%; */
     width: 200px;
     float: right;
     display: none;
@@ -126,7 +126,6 @@ body{
     padding: 15px 25px;
     text-decoration: none;
     display: block;
-    border-radius: 5%;
     background: 0 0;
     transition: all .3s ease-in-out;
     border: solid 2px #{{ site.color.primary }};
@@ -206,7 +205,7 @@ body{
 }
 
 .content{
-    box-align: center;;
+    box-align: center;
 }
 
 .content-intro {
@@ -218,6 +217,7 @@ body{
     font-size: 40px;
     font-weight: bold;
     box-align: center;
+    text-align: center;
 }
 
 .content-main {
@@ -230,8 +230,9 @@ body{
     }
 }
 
+
+/* Projects Grid */
 .projects-cell {
-    /* height: 250px; */
     right: 0;
     text-decoration: none;
     display: block;
@@ -330,4 +331,32 @@ body{
         flex: 1 0 49%;
         max-width: 49%;
     }
+}
+
+/* Modals */
+.modal .close-button {
+    width: 20px;
+    right: 0;
+    position: absolute;
+    color: red;
+    margin: 10px;
+}
+
+.modal .modal-title {
+    margin-top: 15px;
+    font-size: 35px;
+}
+
+.modal .modal-title i {
+    color: #{{ site.color.accent }};
+    font-size: 32px;
+}
+
+.modal img.modal-img {
+    width: 90%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

@@ -1,12 +1,16 @@
 {% for post in site.posts %}
-    <div class="modal fade tabindex="-1" role="dialog" id="projectModal-{{ post.modal-id }}">
+    <div class="modal fade" tabindex="-1" role="dialog" id="projectModal-{{ post.modal-id }}">
         <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="text-center modal-title">{{ post.title }}</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+                <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+                <div class="content-header modal-title">
+                    {{ post.title }}<br />
+                    <div class="inline-div content-hidden-medium">───</div>── <i class="fas {{ post.icon }}"></i> <div class="inline-div content-hidden-medium">───</div>──
                 </div>
                 <div class="modal-body">
+                    <img src="/res/{{ post.img }}" class="img-rounded modal-img" alt="{{ post.alt}}">
+                    <br>
+                    <br>
                     <p>{{ post.description }}</p>
                 </div>
                 <div class="modal-footer">
