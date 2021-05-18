@@ -224,9 +224,18 @@ body{
     padding: {{ site.navbar.height }}px 0;
 }
 
+.content-about {
+    column-count: 2;
+    column-gap: 75px;
+}
+
 @media (max-width: 849px) {
     .content-main {
         padding: {{ site.navbar.height-small }}px 0;
+    }
+
+    .content-about {
+        column-count: 1;
     }
 }
 

@@ -47,7 +47,8 @@ social:
     url: http://github.com/Bennett-Wendorf
   - title: stack-overflow
     url: https://stackoverflow.com/users/13887741/bennett-wendorf
-
+  - title: envelope
+    url: mailto:bennettwendorf@gmail.com
 # Footer settings
 footer:
   social: Around the Web
