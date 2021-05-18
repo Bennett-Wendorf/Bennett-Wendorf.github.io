@@ -4,6 +4,8 @@
 # which you are expected to set up once and rarely edit after that. If you find
 # yourself editing this file very often, consider using Jekyll's data files
 # feature for the data you need to update frequently.
+# 
+# To run the site locally, use "rbenv exec bundle exec jekyll serve verbose --livereload"
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
@@ -37,6 +39,7 @@ color:
   btn-hover: 5D5D5D
   btn-active: 303030
   accent: 00ccff
+  accent-rgb: "0, 204, 255"
 
 # Social network information
 social:

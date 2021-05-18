@@ -1,0 +1,30 @@
+{% for post in site.posts %}
+    <div class="modal fade" tabindex="-1" role="dialog" id="projectModal-{{ post.modal-id }}">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <button type="button" class="close close-button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button>
+                <div class="content-header modal-title">
+                    {{ post.title }}<br />
+                    <div class="inline-div content-hidden-medium">───</div>── <i class="fas {{ post.icon }}"></i> <div class="inline-div content-hidden-medium">───</div>──
+                </div>
+                <div class="modal-body">
+                    <img src="/res/{{ post.img }}" class="modal-img img-rounded" alt="{{ post.alt}}">
+                    <br>
+                    <br>
+                    <p>{{ post.description }}</p>
+                </div>
+                <div class="modal-info text-center">
+                    {% if post.github-link %}
+                        <a href="{{ post.github-link }}" class="btn-modal-github btn-modal-outline"><i class="fa fa-github"></i></a>
+                    {% endif %}
+                    {% if post.project-link %}
+                        <a href="{{ post.project-link }}" class="btn-modal-github btn-modal-outline"><i class="fas {{ post.icon }}"></i></a>
+                    {% endif %}
+                    <div class="modal-date">
+                        {{ post.project-date }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endfor %}

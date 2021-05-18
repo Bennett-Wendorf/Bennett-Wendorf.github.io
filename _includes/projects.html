@@ -2,25 +2,26 @@
     <div class="text-center container content-main">
         <div class="content-header">
             Projects<br />
-            <div class="inline-div content-hidden-medium">───</div>── <i class="fa fa-code-branch" style="font-size: 32px; color: #{{ site.color.accent }}"></i> <div class="inline-div content-hidden-medium">───</div>──
+            <div class="inline-div content-hidden-medium">───</div>── <i class="fa fa-code-branch"></i> <div class="inline-div content-hidden-medium">───</div>──
         </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm portfolio-cell" style="background-image: url("/res/blur_code.png")">
-                    Genetic Algorithm
-                </div>
-                <div class="col-sm portfolio-cell">
-                    Kivy Task Monitor
-                </div>
-            </div>
-            <div class="row">
-                <a href="" class="col-sm portfolio-cell content-area-image" data-toggle="collapse" data-target="#Personal_Website_Popup">
-                    This site.
-                </a>
-                <div class="col-sm portfolio-cell" style="background: none;">
-                </div>
+        <div class="projects-flex-grid container">
+            <div class="projects-flex-row">
+                {% for post in site.posts %}
+                    <div class="projects-cell-flex projects-cell">
+                        <a href="#projectModal-{{ post.modal-id }}" class="projects-link" data-toggle="modal">
+                            <div class="open-indicator rounded">
+                                <div class="open-indicator-content">
+                                    <i class="fa fa-info-circle fa-3x"></i>
+                                </div>
+                            </div>
+                            <div class="caption vertical-center">
+                                {{ post.short-title }}
+                            </div>
+                            <img src="/res/{{ post.img }}" class="rounded projects-img" alt="{{ post.alt }}">
+                        </a>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
 </div>
-<iframe src="/test_popup.html" title="Test Popup" id="Personal_Website_Popup" style="border: none; height: 100%;" class=""></iframe>
