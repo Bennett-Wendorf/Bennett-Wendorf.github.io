@@ -11,17 +11,17 @@
                     <img src="/res/{{ post.img }}" class="modal-img img-rounded" alt="{{ post.alt}}">
                     <br>
                     <br>
-                    <p>{{ post.description }}</p>
+                    <p class="modal-description">{{ post.description }}</p>
                 </div>
                 <div class="modal-info text-center">
                     {% if post.github-link %}
                         <a href="{{ post.github-link }}" class="btn-modal-github btn-modal-outline"><i class="fa fa-github"></i></a>
                     {% endif %}
                     {% if post.project-link %}
-                        <a href="{{ post.project-link }}" class="btn-modal-github btn-modal-outline"><i class="fas {{ post.icon }}"></i></a>
+                        <a href="{{ post.project-link }}" class="btn-modal-github btn-modal-outline"><i class="fas fas fa-external-link-alt"></i></a>
                     {% endif %}
                     <div class="modal-date">
-                        {{ post.project-date }}
+                        <i class="far fa-calendar-alt"></i>: {{ post.project-date }}
                     </div>
                 </div>
             </div>
