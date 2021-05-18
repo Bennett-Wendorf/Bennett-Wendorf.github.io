@@ -9,15 +9,17 @@
                 {% for post in site.posts %}
                     <div class="projects-cell-flex projects-cell">
                         <a href="#projectModal-{{ post.modal-id }}" class="projects-link" data-toggle="modal">
+                            <div class="caption vertical-center">
+                                {{ post.short-title }}
+                            </div>
                             <div class="open-indicator rounded">
                                 <div class="open-indicator-content">
                                     <i class="fa fa-info-circle fa-3x"></i>
                                 </div>
                             </div>
-                            <div class="caption vertical-center">
-                                {{ post.short-title }}
+                            <div class="projects-img rounded">
+                                <img src="/res/{{ post.img }}" alt="{{ post.alt }}">
                             </div>
-                            <img src="/res/{{ post.img }}" class="rounded projects-img" alt="{{ post.alt }}">
                         </a>
                     </div>
                 {% endfor %}
