@@ -257,7 +257,13 @@ body{
 
 .projects-img {
     width: 100%;
-    height: auto;
+    height: 250px;
+}
+
+.blur {
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    z-index: -1;
 }
 
 .projects-link .open-indicator {
@@ -359,4 +365,41 @@ body{
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.modal .btn-modal-github {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: #{{ site.color.primary-light }};
+}
+
+.btn-modal-outline{
+    border: solid 2px #{{ site.color.primary-light }};
+    background: 0 0;
+    transition: all .3s ease-in-out;
+}
+
+.btn-modal-outline:hover,
+.btn-modal-outline:focus,
+.btn-modal-outline:active,
+.btn-modal-outline.active{
+    /* border: solid 2px #{{ site.color.primary-text }}; */
+    color: #{{ site.color.accent }};
+    background: #{{ site.color.btn-hover }};
+    text-decoration: none;
+}
+
+.modal .modal-info {
+    margin-bottom: 15px;
+}
+
+.modal .modal-date {
+    margin-top: 5px;
+    float: center;
 }

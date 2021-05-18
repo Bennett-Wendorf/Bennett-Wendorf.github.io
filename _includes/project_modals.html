@@ -8,13 +8,21 @@
                     <div class="inline-div content-hidden-medium">───</div>── <i class="fas {{ post.icon }}"></i> <div class="inline-div content-hidden-medium">───</div>──
                 </div>
                 <div class="modal-body">
-                    <img src="/res/{{ post.img }}" class="img-rounded modal-img" alt="{{ post.alt}}">
+                    <img src="/res/{{ post.img }}" class="modal-img img-rounded" alt="{{ post.alt}}">
                     <br>
                     <br>
                     <p>{{ post.description }}</p>
                 </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+                <div class="modal-info text-center">
+                    {% if post.github-link %}
+                        <a href="{{ post.github-link }}" class="btn-modal-github btn-modal-outline"><i class="fa fa-github"></i></a>
+                    {% endif %}
+                    {% if post.project-link %}
+                        <a href="{{ post.project-link }}" class="btn-modal-github btn-modal-outline"><i class="fas {{ post.icon }}"></i></a>
+                    {% endif %}
+                    <div class="modal-date">
+                        {{ post.project-date }}
+                    </div>
                 </div>
             </div>
         </div>
