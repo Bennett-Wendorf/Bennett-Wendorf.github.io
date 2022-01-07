@@ -1,5 +1,5 @@
 ## My Site
-This is the Github repo that houses my personal website available at [Bennett-Wendorf.github.io](https://bennett-wendorf.github.io/). 
+This is the Github repo that houses my personal website available at [bennettwendorf.dev](https://www.bennettwendorf.dev/). 
 ![website](https://user-images.githubusercontent.com/49812183/120088685-d8475100-c0b8-11eb-975f-664e7916fb16.png)
 
 ## Purpose
