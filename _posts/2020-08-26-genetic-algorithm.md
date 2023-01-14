@@ -9,5 +9,5 @@ alt: image-alt
 icon: fa-dna
 project-date: August 2020
 github-link: https://github.com/Bennett-Wendorf/Simple-String-Finder-Genetic-Algorithm
-description: This is a simple gemetic algorithm that finds a predefined string. It serves as an example and an excercise on how to build a very simple genetic algorithm. 
+description: This is a simple genetic algorithm that finds a predefined string. It serves as an example and an exercise on how to build a very simple genetic algorithm. 
 ---
